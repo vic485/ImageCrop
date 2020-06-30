@@ -26,6 +26,10 @@ namespace ImageCrop
             var w = int.Parse(Console.ReadLine());
             Console.Write("Enter height: ");
             var h = int.Parse(Console.ReadLine());
+            
+            var outputDir = Path.Combine(directory, "output");
+            if (!Directory.Exists(outputDir))
+                Directory.CreateDirectory(outputDir);
 
             var fileList = Directory.GetFiles(directory);
 
@@ -37,7 +41,7 @@ namespace ImageCrop
                 var newImage = CropImage(image, new Rectangle(x, y, w, h));
 
                 // TODO: Support other file types
-                using var fileStream = File.Create(Path.Combine(directory, $"{fileName}-crop.png"));
+                using var fileStream = File.Create(Path.Combine(outputDir, $"{fileName}.png"));
                 newImage.Save(fileStream, ImageFormat.Png);
             }
         }
