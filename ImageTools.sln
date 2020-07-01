@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCrop", "ImageCrop\Imag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSplit", "ImageSplit\ImageSplit.csproj", "{9446A349-A4D0-4CEB-A85D-F9D34AB58C4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCapture", "ImageCapture\ImageCapture.csproj", "{8A15B649-6CB4-425D-BCFD-9CB6EC5276D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{9446A349-A4D0-4CEB-A85D-F9D34AB58C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9446A349-A4D0-4CEB-A85D-F9D34AB58C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9446A349-A4D0-4CEB-A85D-F9D34AB58C4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A15B649-6CB4-425D-BCFD-9CB6EC5276D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A15B649-6CB4-425D-BCFD-9CB6EC5276D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A15B649-6CB4-425D-BCFD-9CB6EC5276D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A15B649-6CB4-425D-BCFD-9CB6EC5276D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

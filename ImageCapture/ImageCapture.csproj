@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <AssemblyName>ImageCapture</AssemblyName>
+        <RootNamespace>ImageCapture</RootNamespace>
+        <LangVersion>8</LangVersion>
+        <RuntimeIdentifiers>win10-x64;ubuntu.18.04-x64</RuntimeIdentifiers>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <PublishSingleFile>true</PublishSingleFile>
+        <PublishTrimmed>true</PublishTrimmed>
+        <AssemblyName>ImageCapture</AssemblyName>
+        <PlatformTarget>x64</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+        <AssemblyName>ImageCapture_d</AssemblyName>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <PlatformTarget>x64</PlatformTarget>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="System.Drawing.Common" Version="5.0.0-preview.6.20305.6" />
+    </ItemGroup>
+
+</Project>
